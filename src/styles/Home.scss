@@ -1,0 +1,28 @@
+@import "./partials/colors";
+
+.home {
+    border: 1px solid blue;
+    height: fit-content;
+    padding: 2rem;
+
+    h1 {
+        font-weight: 300;
+    }
+
+
+    p {
+        margin: 1rem;
+    }
+
+    .cta-container {
+        a {
+            border: 1px solid black;
+            padding: .5rem 1rem;
+            margin: 1rem 0;
+            font-size: 1.3rem;
+            background-color: $cta2-color;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
