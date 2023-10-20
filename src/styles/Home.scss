@@ -4,25 +4,69 @@
     border: 1px solid blue;
     height: fit-content;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 
     h1 {
         font-weight: 300;
+        margin: 2rem 0;
+        font-size: 2.3rem;
+        border: 1px solid red;
+        padding: .5rem;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        z-index: 2;
     }
 
+    .hero-container {
+        display: flex;
 
-    p {
-        margin: 1rem;
-    }
+        .description-container {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-    .cta-container {
-        a {
-            border: 1px solid black;
-            padding: .5rem 1rem;
-            margin: 1rem 0;
-            font-size: 1.3rem;
-            background-color: $cta2-color;
-            color: white;
-            text-decoration: none;
+            p {
+                margin: 1rem;
+            }
+
+            .cta-container {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: .5rem 1rem;
+                    margin: 1rem 0;
+                    font-size: 1.3rem;
+                    background-color: $cta2-color;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 15px;
+                }
+            }
         }
     }
+
+
+    .photo-container {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+
+
 }
